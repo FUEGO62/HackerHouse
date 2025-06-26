@@ -97,7 +97,9 @@ public class UserServiceImpl implements UserService {
         return  commentRepository.findAll().stream().filter(x->(x.getReportId().equals(request.getReportId()))).toList();
     }
 
-    public
+    public void createReport(CreateReportRequest request) {
+        Report report = modelMapper.map(request, Report.class);
+    }
 
     private void validate(final String name) {
         if (name == null || name.trim().isEmpty())

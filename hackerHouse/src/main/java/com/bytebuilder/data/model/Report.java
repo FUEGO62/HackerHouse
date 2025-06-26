@@ -3,7 +3,6 @@ package com.bytebuilder.data.model;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +18,7 @@ public class Report {
     private Type type;
     private String issuer;
     private String pictureId;
-    private LocalDateTime time;
+    private String time;
     private boolean isVerified;
     private boolean isEmergency;
 }

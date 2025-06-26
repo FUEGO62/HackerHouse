@@ -75,7 +75,7 @@ class UserServiceTest {
         Report report = new Report();
         report.setEmergency(false);
         report.setType(Type.FLOOD);
-        report.setTime(LocalDateTime.now());
+        report.setTime("yoo");
         report.setIssuer("");
         report.setLatitude(6.788);
         report.setLongitude(3.29);
